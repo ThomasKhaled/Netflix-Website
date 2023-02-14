@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    color: white;
+    background-color: rgba(33, 36, 36, 0.212);
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 4rem 0;
+    width: 100%;
+    outline: 1px solid gold;
+
+}
+
+article {
+    display: flex;
+    align-items: center;
+}
+
+.movie-img {
+    min-width: 100px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.info {
+    margin: 0 3rem;
+}
+
+.over {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.overview-info {
+    font-size: 1rem;
+}
+
+.score-trailer {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.date {
+    font-size: 1.2rem;
+    margin-top: 1.7rem;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+#trailer {
+    border: 0;
+    color: white;
+    font-size: 1.2rem;
+    background-color: transparent;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.score {
+    border-radius: 50%;
+    border: 1px solid gold;
+    padding: .5rem;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 12px solid #ffffff;
+    align-self: center;
+    transition: .5s transform ease-in-out;
+    margin-left: 10rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.trailer {
+    width: 100%;
+}
+
+
+footer {
+    margin-top: 3rem !important;
+    width: 100%;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    align-self: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.circular {
+    position: relative !important;
+}
