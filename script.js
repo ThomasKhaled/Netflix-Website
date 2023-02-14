@@ -11,6 +11,7 @@ function handleNavBarDropdown() {
     HomeItem.classList.add('current');
     HomeItem.classList.add('disabled');
     HomeItem.addEventListener('click', () => {
+        window.open('/index.html','_self');
         HomeItem.classList.add('current');
         HomeItem.classList.add('disabled');
         TVItem.classList.remove('current');

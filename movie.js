@@ -5,15 +5,18 @@ const voteVal = document.querySelector('.vote-val');
 const trailer = document.querySelector('.trailer');
 const overview = document.querySelector('.overview-info');
 const date = document.querySelector('.date');
+const homeNav = document.getElementById('home');
 const movies = JSON.parse(localStorage.getItem('movies'));
 const id = JSON.parse(localStorage.getItem('id'));
 const type = JSON.parse(localStorage.getItem('type'));
 
+homeNav.addEventListener('click',()=>{
+    window.open('/index.html','_self');
 
+});
 
 async function getTrailer(id,movie_type) {
     let tvShows_Query;
-    console.log(`https://api.themoviedb.org/3/tv/${id}/videos?api_key=3b89d7481e728beb40b173ed35ef7a1b&language=en-US`);
     if (movie_type == 'TV Shows')
         tvShows_Query = `https://api.themoviedb.org/3/tv/${id}/videos?api_key=3b89d7481e728beb40b173ed35ef7a1b&language=en-US`;
     else 
