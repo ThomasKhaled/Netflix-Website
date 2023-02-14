@@ -222,7 +222,7 @@ function showMovies(contentBox,type,node){
             movieDev.addEventListener('click',()=>{
                 localStorage.setItem('id',JSON.stringify(data.results[i].id));
                 localStorage.setItem('type',JSON.stringify(type));
-                window.open('/movie_info.html');
+                window.open('/movie_info.html','_self');
             });
             let votecircle = document.createElement('div');
             votecircle.className = 'circular';
