@@ -116,6 +116,35 @@ let slidingAmountTrending = 1000;
 let scrollAmountPopupMovie = 0;
 let slidingAmountPopupMovie = 600;
 
+const w = document.querySelector('.main-content');
+window.addEventListener('resize',()=>{    
+    if(w.clientWidth > 1180){
+        slidingAmount = 1000;
+        slidingAmountTrending = 1000;
+    }
+    else if(w.clientWidth >= 980 && w.clientWidth < 1180){
+        slidingAmount = 700;
+        slidingAmountTrending = 700;
+        
+    }
+    else if(w.clientWidth >= 750 && w.clientWidth < 980){
+        slidingAmount = 500;
+        slidingAmountTrending = 500;
+        slidingAmountPopupMovie = 400;
+    }
+    else if(w.clientWidth >= 550 && w.clientWidth < 750){
+        slidingAmount = 200;
+        slidingAmountTrending = 200;
+        slidingAmountPopupMovie = 150;
+    }
+    else if(w.clientWidth < 550){
+        slidingAmount = 50;
+        slidingAmountTrending = 50;
+        slidingAmountPopupMovie = 50;
+    }
+    
+});
+
 const sliderButton = document.querySelectorAll('.slider-button');
 const sliders = document.querySelector('.carousel-box');
 const sliders_trending = document.querySelector('.carousel-trending');
